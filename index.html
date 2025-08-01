@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background">
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <i class="fas fa-utensils"></i> Khana Khazana
+        </div>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="#"><i class="fas fa-hamburger"></i> Menu</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> Account</a></li>
+            <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
+            <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+          </ul>
+          <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>"Food is the ingredient that binds us together."</h1>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Our Special Menu</h2>
+      <div class="menu-container">
+        <div class="menu-card">
+          <img src="https://imgs.search.brave.com/JlyRbq9KKhJoKdBxVFN-AIu0JSw26cQNAUhhOX5HHx0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDYv/NDk2Lzk5Ni9zbWFs/bC9hLXBpenphLXdp/dGgtYS1zbGljZS1t/aXNzaW5nLW9uLWEt/dHJhbnNwYXJlbnQt/YmFja2dyb3VuZC1w/bmcucG5n" alt="Pizza">
+          <h3>Margherita Pizza</h3>
+          <p>Classic delight with 100% real mozzarella cheese</p>
+          <span>₹299</span>
+        </div>
+        <div class="menu-card">
+          <img src="https://imgs.search.brave.com/Xzen29-p84hQXGBc4mhNO6qb_zux8VMY_oW3Vzz7Yc4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDkv/OTc0LzI1MS9zbWFs/bC9hLWhhbWJ1cmdl/ci13aXRoLWNoZWVz/ZS1vbmlvbnMtYW5k/LWxldHR1Y2UtcG5n/LnBuZw" alt="Burger">
+          <h3>Cheese Burger</h3>
+          <p>Grilled patty with crispy veggies and cheese</p>
+          <span>₹199</span>
+        </div>
+        <div class="menu-card">
+          <img src="https://imgs.search.brave.com/cRF1eYuLIXZggQ6nA3mRX9t-1233szhNoa-Q_qK1cAQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzQv/NDY4LzAzNi9zbWFs/bC9jaG93LW1laW4t/bm9vZGxlcy1jaGlu/ZXNlLWZyaWVkLWNo/b3ctbWVpbi1jaGlj/a2VuLWNob3ctbWVp/bi1jaGluZXNlLWNo/b3ctbWVpbi1hc2lh/bi1jaG93LW1laW4t/Y2hvdy1tZWluLXRy/YW5zcGFyZW50LWJh/Y2tncm91bmQtYWkt/Z2VuZXJhdGVkLXBu/Zy5wbmc" alt="Noodles">
+          <h3>Red Sauce Noodles</h3>
+          <p>Penne tossed in homemade tomato sauce</p>
+          <span>₹249</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="veg-nonveg-section">
+      <h2>Our Full Menu</h2>
+      <div class="menu-columns">
+        <div class="menu-column veg">
+          <h3>Veg Items</h3>
+          <ul>
+            <li>Paneer Tikka</li>
+            <li>Veg Spring Rolls</li>
+            <li>Veg Biryani</li>
+            <li>Chole Bhature</li>
+            <li>Palak Paneer</li>
+            <li>Mixed Veg Curry</li>
+            <li>Veg Fried Rice</li>
+            <li>Gulab Jamun</li>
+          </ul>
+        </div>
+        <div class="menu-column nonveg">
+          <h3>Non-Veg Items</h3>
+          <ul>
+            <li>Chicken Tikka</li>
+            <li>Fish Fingers</li>
+            <li>Chicken Biryani</li>
+            <li>Mutton Rogan Josh</li>
+            <li>Butter Chicken</li>
+            <li>Egg Curry</li>
+            <li>Chicken Fried Rice</li>
+            <li>Rasmalai</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="book-table">
+      <h2>Book A Table</h2>
+      <form id="bookingForm">
+        <input type="text" id="name" placeholder="enter your name" required>
+        <input type="number" name="number" id="number"
+        placeholder="enter phone number">
+        <input type="text" id="numbers" placeholder="Enter number of guests" required>
+        <input type="date" name="date" id="date" required>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 Khana Khazana. All rights reserved.</p>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.2/dist/sweetalert2.all.min.js"></script>
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      Swal.fire({
+  title: "Thanks",
+  text: "Your booking is confirmed, We will contact you soon",
+  icon: "success"
+});
+
+      document.getElementById("numbers").value = "";
+    });
+  </script>
+</body>
+</html>
